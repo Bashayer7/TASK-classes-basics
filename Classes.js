@@ -17,8 +17,27 @@
  * after you are done with the class, create at least 3 objects of type Actor of your favorite actors
  */
 class Person {
-  // continue the code here
+  constructor(firstName, lastName, gender, birthY, interest) {
+    this.fn = firstName;
+    this.ln = lastName;
+    this.g = gender;
+    this.dob = birthY;
+    this.intr = [];
+  }
+  printName = () => {
+    console.log(`full name is ${this.firstName}${this.lastName}`);
+  };
+  calculatingAge = (currentYear) => {
+    return currentYear - birthY;
+  };
+  addIntrest = (newint) => {
+    this.intr.push(newint);
+  };
 }
+const p = new Person("bb", "albaq", "female", 1993, "travelling");
+const p1=new Person("ff","k","male",1990,"swimming");
+const p2=new Person("tj","d","female",1980,"diving");
+
 
 /** (Question 2): (15000 Points)
  * 1. Write a class `Movie`, give it the following properties
@@ -43,6 +62,19 @@ class Person {
 
 class Movie {
   // continue the code here
+  constructor(title,duration,rating){
+    this.t=title;
+    this.du=duration;
+    this.rate=rating;
+  }
+  addrating=(r)=>{
+this.rating.push(r)
+  }
+  //  ratingrange= r>0 && r<10)
+  averagerating=(average)=>{
+    const average=sumOfValues/countOfValues;
+    this.rate=average;
+  }
 }
 
 /** (Question 3): (1000 Points)
@@ -55,3 +87,13 @@ class Movie {
  */
 
 // write the class here
+class Actor
+{
+  constructor(firstName, lastName, gender,Movie,rate){
+    super(firstName, lastName, gender)
+    this.Mov=Movie;
+    this.r=rate;
+  }
+addMovie=(mov)=>
+}
+const a=new Actor("")
